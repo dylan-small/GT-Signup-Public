@@ -30,7 +30,7 @@ def isFullSearch(content,index):
 	return len(content[index]) > 3
 #init browser and contents of .keys files
 options = Options()
-#options.add_argument('--headless')
+options.add_argument('--headless')
 driver = webdriver.Chrome(chrome_options=options)
 print('initialized browser...')
 userinfo = parseUserInfo('userinfo.keys')
